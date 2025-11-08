@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Flow | Notebooks Manufacturing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        header { text-align: center; color: white; padding: 40px 20px; margin-bottom: 40px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); }
+        h1 { font-size: 3em; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+        .subtitle { font-size: 1.3em; opacity: 0.9; }
+        /* --- Navigation Bar Styling --- */
+        .navbar { background: #764ba2; padding: 10px 0; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+        .nav-list { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        .nav-item a { color: white; text-decoration: none; padding: 10px 15px; display: block; transition: background-color 0.3s ease; border-radius: 5px; font-weight: 500;}
+        .nav-item a:hover { background-color: #667eea; }
+        /* ------------------------------ */
+        .process-diagram { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); text-align: center; margin-bottom: 40px; }
+        .process-diagram img { max-width: 100%; height: auto; border: 2px solid #667eea; border-radius: 10px; }
+        .process-flow-container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 20px;
+        }
+        .flow-step {
+            display: inline-block;
+            background: #f0f4f8;
+            color: #764ba2;
+            padding: 15px 30px;
+            margin: 10px 0;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .flow-arrow {
+            font-size: 2em;
+            color: white;
+            margin: -10px 0;
+            line-height: 0;
+        }
+        .process-step { background: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+        .process-step h2 { color: #764ba2; margin-bottom: 10px; font-size: 1.8em; }
+        .process-step p { color: #555; line-height: 1.6; }
+
+        .cta-section { background: rgba(255, 255, 255, 0.95); padding: 50px; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); }
+        .cta-button { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 18px 45px; border: none; border-radius: 50px; font-size: 1.2em; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4); margin: 0 10px; }
+        .cta-button:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6); }
+        footer { text-align: center; color: white; padding: 30px; margin-top: 40px; font-size: 1.1em; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .nav-list { flex-direction: column; }
+            .nav-item a { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Manufacturing Process Flow ➡️</h1>
+            <p class="subtitle">Visualizing the automated steps from raw material to finished product</p>
+        </header>
+
+        <!-- Global Navigation Bar (Updated) -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="machines.html">Full Machine List</a></li>
+                <li class="nav-item"><a href="process.html">Process Flow</a></li>
+                <li class="nav-item"><a href="data-management.html">Data & Reporting</a></li>
+                <li class="nav-item"><a href="feasibility.html">Feasibility Study</a></li>
+                <li class="nav-item"><a href="about.html">About Us</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="reference.html">References</a></li>
+            </ul>
+        </nav>
+
+        <div class="process-diagram">
+            <h2>The Notebook Production Workflow</h2>
+            <!-- Embedded Process Flow Diagram from DOCX -->
+                    </div>
+
+        <div class="process-step">
+            <h2>1. Paper Cutting</h2>
+            <p>The **Industrial Paper Cutting Machine** accurately cuts raw paper materials to the necessary size for both the inner pages and covers. This foundational step ensures product uniformity and minimizes material waste.</p>
+        </div>
+        <div class="process-step">
+            <h2>2. Ruling / Printing</h2>
+            <p>Using the **Web Fed Ruling/Printing Machine**, lines, margins, and any special designs are printed on the sheets. This process is highly automated, using advanced systems to ensure lines are straight and colors are registered precisely.</p>
+        </div>
+        <div class="process-step">
+            <h2>3. Folding & Gathering</h2>
+            <p>Sheets are precisely folded into **signatures** (smaller groupings) and then **collated** in the correct sequence by the **Automatic Folding and Gathering Machine**. This is a critical step that prepares the paper block for assembly.</p>
+        </div>
+        <div class="process-step">
+            <h2>4. Stitching & Binding</h2>
+            <p>The **High-Speed Stitching and Binding Machine** joins the inner paper block to the cover. This can involve wire stitching (stapling) for simpler notebooks or perfect binding (gluing) for more durable products, highlighting a significant step in automation and quality assurance.</p>
+        </div>
+        <div class="process-step">
+            <h2>5. Packaging</h2>
+            <p>The final step, where finished notebooks are counted, shrink-wrapped, and boxed for distribution. Automation here maintains product protection and prepares them efficiently for market dispatch.</p>
+        </div>
+
+
+        <div class="cta-section">
+            <h2>Explore Data Management and Reporting</h2>
+            <p>See how data is structured and monitored for performance analysis.</p>
+            <button class="cta-button" onclick="window.location.href='data-management.html'">View Data Systems</button>
+            <button class="cta-button" onclick="window.location.href='contact.html'">Contact</button>
+        </div>
+
+        <footer>
+            <p>&lt;&lt;© Vision X &gt;&gt;</p>
+        </footer>
+    </div>
+</body>
+</html>

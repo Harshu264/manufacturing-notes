@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Notebooks Manufacturing Machines</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        header { text-align: center; color: white; padding: 40px 20px; margin-bottom: 40px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); }
+        h1 { font-size: 3em; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+        .subtitle { font-size: 1.3em; opacity: 0.9; }
+        /* --- Navigation Bar Styling --- */
+        .navbar { background: #764ba2; padding: 10px 0; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+        .nav-list { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        .nav-item a { color: white; text-decoration: none; padding: 10px 15px; display: block; transition: background-color 0.3s ease; border-radius: 5px; font-weight: 500;}
+        .nav-item a:hover { background-color: #667eea; }
+        /* ------------------------------ */
+        .machines-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 30px; margin-bottom: 40px; }
+        .machine-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .machine-card:hover { transform: translateY(-10px); box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3); }
+        .machine-image { width: 100%; height: 280px; object-fit: cover; border-bottom: 4px solid #667eea; }
+        .machine-content { padding: 30px; }
+        .machine-title { font-size: 1.8em; color: #667eea; margin-bottom: 15px; font-weight: bold; }
+        .machine-description { color: #555; line-height: 1.8; margin-bottom: 20px; }
+        .features-list { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px; border-radius: 12px; margin-top: 15px; }
+        .features-list h3 { color: #764ba2; margin-bottom: 12px; font-size: 1.2em; }
+        .features-list ul { list-style: none; padding-left: 0; }
+        .features-list li { padding: 8px 0; padding-left: 25px; position: relative; color: #333; }
+        .features-list li:before { content: "✓"; position: absolute; left: 0; color: #667eea; font-weight: bold; font-size: 1.2em; }
+        .specs-badge { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; margin: 5px 5px 5px 0; font-weight: 500; }
+        .cta-section { background: rgba(255, 255, 255, 0.95); padding: 50px; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); }
+        .cta-section h2 { color: #667eea; font-size: 2.5em; margin-bottom: 20px; }
+        .cta-section p { color: #555; font-size: 1.2em; margin-bottom: 30px; line-height: 1.6; }
+        .cta-button { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 18px 45px; border: none; border-radius: 50px; font-size: 1.2em; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4); margin: 0 10px; }
+        .cta-button:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6); }
+        footer { text-align: center; color: white; padding: 30px; margin-top: 40px; font-size: 1.1em; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .machines-grid { grid-template-columns: 1fr; }
+            .cta-section { padding: 30px 20px; }
+            .cta-button { display: block; margin: 10px auto; }
+            .nav-list { flex-direction: column; }
+            .nav-item a { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Explore Machines Used In Notebooks Manufacturing</h1>
+            <p class="subtitle">Paper Processing & Printing Equipment</p>
+        </header>
+
+        <!-- Global Navigation Bar (Updated) -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="machines.html">Full Machine List</a></li>
+                <li class="nav-item"><a href="process.html">Process Flow</a></li>
+                <li class="nav-item"><a href="data-management.html">Data & Reporting</a></li>
+                <li class="nav-item"><a href="feasibility.html">Feasibility Study</a></li>
+                <li class="nav-item"><a href="about.html">About Us</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="reference.html">References</a></li>
+            </ul>
+        </nav>
+
+        <div class="machines-grid">
+            <!-- Machine 1: Color Printing Press -->
+            <div class="machine-card">
+                <img src="1st.jpg" alt="Color Printing Press" class="machine-image" onerror="this.style.background='linear-gradient(135deg, #667eea, #764ba2)'">
+                <div class="machine-content">
+                    <h2 class="machine-title">Multi-Color Offset Printing Press</h2>
+                    <p class="machine-description">
+                        High-speed industrial offset printing press designed for large-scale commercial printing operations. Features advanced color registration systems and automated quality control for consistent, professional results.
+                    </p>
+                    <div>
+                        <span class="specs-badge">High Speed</span>
+                        <span class="specs-badge">Multi-Color</span>
+                        <span class="specs-badge">Automated</span>
+                    </div>
+                    <div class="features-list">
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li>Precision color matching and registration</li>
+                            <li>Variable speed control for different materials</li>
+                            <li>Inline quality inspection system</li>
+                            <li>Energy-efficient operation</li>
+                            <li>Easy maintenance and cleaning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Machine 2: Web Fed Printing System -->
+            <div class="machine-card">
+                <img src="2nd.jpg" alt="Web Fed Printing" class="machine-image" onerror="this.style.background='linear-gradient(135deg, #764ba2, #667eea)'">
+                <div class="machine-content">
+                    <h2 class="machine-title">Web Fed Flexographic Press</h2>
+                    <p class="machine-description">
+                        State-of-the-art roll-to-roll printing system ideal for continuous production of packaging materials, labels, and flexible substrates. Delivers exceptional print quality at remarkable speeds.
+                    </p>
+                    <div>
+                        <span class="specs-badge">Roll-to-Roll</span>
+                        <span class="specs-badge">High Volume</span>
+                        <span class="specs-badge">Flexible Media</span>
+                    </div>
+                    <div class="features-list">
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li>Continuous web feeding system</li>
+                            <li>Multiple printing stations</li>
+                            <li>Tension control for precise registration</li>
+                            <li>Quick changeover capabilities</li>
+                            <li>Integrated drying systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Machine 3: Paper Cutting Machine -->
+            <div class="machine-card">
+                <img src="3rd.webp" alt="Paper Cutting Machine" class="machine-image" onerror="this.style.background='linear-gradient(135deg, #667eea, #764ba2)'">
+                <div class="machine-content">
+                    <h2 class="machine-title">Industrial Paper Cutting Machine</h2>
+                    <p class="machine-description">
+                        Heavy-duty hydraulic paper cutter designed for precision cutting of large paper stacks. Essential equipment for print finishing operations, binderies, and paper processing facilities.
+                    </p>
+                    <div>
+                        <span class="specs-badge">Hydraulic</span>
+                        <span class="specs-badge">Precision</span>
+                        <span class="specs-badge">Heavy Duty</span>
+                    </div>
+                    <div class="features-list">
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li>Programmable cutting positions</li>
+                            <li>Safety light barriers and guards</li>
+                            <li>High-capacity paper clamp</li>
+                            <li>Digital backgauge positioning</li>
+                            <li>Self-sharpening blade system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>See the Full Manufacturing Process</h2>
+            <p>Explore the step-by-step workflow from cutting to final packaging.</p>
+            <button class="cta-button" onclick="window.location.href='process.html'">View Process Flow</button>
+            <button class="cta-button" onclick="window.location.href='contact.html'">Contact</button>
+        </div>
+
+        <footer>
+            <p>&lt;&lt;© Vision X &gt;&gt;</p>
+        </footer>
+    </div>
+</body>
+</html>
